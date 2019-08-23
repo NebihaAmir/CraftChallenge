@@ -1,0 +1,40 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Encoding.com TEST",
+		"_postman_id": "29efa5ef-14c6-f45e-333b-6b489d080144",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://manage.encoding.com",
+			"request": {
+				"url": "https://manage.encoding.com",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "json",
+							"value": "{\n  \"query\": {\n    \"userid\": \"52284\",\n    \"userkey\": \"fe99d294e3d278c689c2c89c80a0ae9f\",\n    \"action\": \"AddMedia\",\n    \"source\": \"http://AKIAJAPY4JM5IIR2TQLQ:6KYw3Xwy3MpNvkfQPdBzA8zvVcSldNqOhYrOlcz7@mediator-encoding-poc.s3.amazonaws.com/GMO_00000000031367_01.mov\",\n    \"format\": {\n      \"output\": \"mp4\",\n      \"size\": \"320x240\",\n      \"bitrate\": \"256k\",\n      \"audio_bitrate\": \"64k\",\n      \"audio_channels_number\": \"2\",\n      \"keep_aspect_ratio\": \"yes\",\n      \"video_codec\": \"mpeg4\",\n      \"profile\": \"main\",\n      \"VCodecParameters\": \"no\",\n      \"audio_codec\": \"libfaac\",\n      \"two_pass\": \"no\",\n      \"cbr\": \"no\",\n      \"deinterlacing\": \"no\",\n      \"keyframe\": \"300\",\n      \"audio_volume\": \"100\",\n      \"file_extension\": \"mp4\",\n      \"hint\": \"no\"\n    }\n  }\n}",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
