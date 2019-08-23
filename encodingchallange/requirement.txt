@@ -1,0 +1,51 @@
+Encoding.com Test Case
+
+ 
+
+Objectives  :
+
+ 
+
+RAML Specification
+Basic Implementation
+Exception Handling
+Unit Testing
+Configurations
+Mule 4
+ 
+
+Being able to use the encoding.com rest api to submit a job . API documentation is provided below . The goal is to use the api details  to implement a mule flow but taking in to account all the above 6 objectives .
+
+ 
+
+HTTP Listener -> Encoding.com API Call ->Return response
+
+ 
+
+Information for Encoding.com
+
+ 
+
+UserName : Karthik.Rengasamy@nbcuni.com
+
+Password : P@55word
+
+Login Link : https://manage.encoding.com/user/
+
+API Docs : https://api.encoding.com/v1.0/reference
+
+API User ID : 52284
+
+API User Key : fe99d294e3d278c689c2c89c80a0ae9f
+
+ 
+
+API Endpoint : http(s)://manage.encoding.com
+
+Method : HTTP POST
+
+Content-type: application/x-www-form-urlencoded
+
+ 
+
+Example Payload : A sample postman collection is attached for reference
