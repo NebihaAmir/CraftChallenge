@@ -1,0 +1,58 @@
+create mule flow that takes in belwo input message and generates output message
+
+usecase1
+input
+
+
+[{"id":"101","name":"Ted1","company":"google"},
+ {"id":"102","name":"Ted2","company":"microsoft"}
+ 
+{"id":"103","name":"Ted3","company":"craft"}
+ {"id":"104","name":"Ted4","company":"google"}
+ 
+{"id":"105","name":"Ted5","company":"craft"}
+{"id":"106","name":"Ted6","company":"ibm"}
+
+{"id":"107","name":"Ted7","company":"microsoft"}
+{"id":"108","name":"Ted8","company":"google"}
+]
+
+
+
+output
+[{"company":"google","no_employees":"3"},
+{"company":"craft","no_employees":"2"},
+
+{"company":"microsoft","no_employees":"2"},
+{"company":"ibm","no_employees":"1"}]
+
+
+
+usecase2
+
+input 
+
+[{"id":"101","name":"Ted1","company":"google"},
+
+ {"id":"102","name":"Ted2","company":"microsoft"}
+
+ {"id":"103","name":"Ted3","company":"craft"}
+ 
+{"id":"104","name":"Ted4","company":"google"}
+
+ {"id":"105","name":"Ted5","company":"craft"}
+
+{"id":"106","name":"Ted6","company":"ibm"}
+
+{"id":"107","name":"Ted7","company":"microsoft"}
+
+{"id":"108","name":"Ted8","company":"google"}
+]
+
+
+
+output
+google:101|Ted1*104|Ted4*108|Ted8~
+microsoft:102|Ted2*107|Ted7~
+craft:103|Ted3*105|Ted5~
+ibm:106|Ted6

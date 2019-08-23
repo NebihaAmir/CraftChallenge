@@ -1,0 +1,10 @@
+requirement:  create transformation flow that converts from input to output, also sort the output using ID.
+INPUT
+studentPayment:[{"id":"101","card_no":"1212121211","code":"121"},{"id":"105","card_no":"1212121215","code":"125"},{"id":"106","card_no":"1212121216","code":"126"},{"id":"103","card_no":"1212121213","code":"123"}]
+studentAddress:[{"id":"103","street":"johnson","zip","21213","city":"minneapolis"},{"id":"105","street":"water cool","zip","12125","city":"wilmington"},{"id":"106","street":"westchester","zip","126","city":"baltimore"},{"id":"101","street":"clear water","zip","10101","city":"st. pete"}]
+
+OUTPUT
+studentInfo:[{"id":"101","card_no":"1212121211","code":"121","street":"clear water","zip","10101","city":"st. pete"},
+	     {"id":"103","card_no":"1212121213","code":"123","street":"johnson","zip","21213","city":"minneapolis"},
+	     {"id":"105","card_no":"1212121215","code":"125","street":"water cool","zip","12125","city":"wilmington"},
+	     {"id":"106","card_no":"1212121216","code":"126","street":"westchester","zip","126","city":"baltimore"}]
